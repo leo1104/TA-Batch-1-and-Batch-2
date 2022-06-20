@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+let arr=[2,3,4,77]
+let reducedArr= arr.reduce(getSum,2)
+
+function getSum(total,element,index,arr) {
+    console.log(total);
+}
+console.log(reducedArr);
+
+
+// reducedArr=0
+//1 st instance total=2
+//2nd instance total = 2+3=5
+//3rd instance total =5+ 4 =9
+//4th instance total = 9+77 =86
+
+
+// let arr=[2,3,4,77]
+// take this array and the result I want is [2,5,9,86]
+
+// let arr = [2,3,4,77];
+// arr.reduce((valueSoFar,current,index)=>{
+//     valueSoFar = valueSoFar + current;
+//     return arr[index] = valueSoFar;
+//     //  valueSoFar;
+// },0);
+// console.log(arr);
+
+
+// valueSoFar =2,[2,3,4,77]
+// valueSoFar =2+3=5, [2,5,4,77]
+//valueSoFar =5+4=9 , [2,5,9,77]
+//valueSoFar =86, [2,5,9,86]
+
+
+
+// let obj=[{name:'a',age:21},{name:'b',age:44},{name:'a',age:88}]
+
+
+// let foundfn = obj.find(element=>{
+//     return element.name === 'd'
+// })
+// console.log(foundfn);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let obj=[{name:'a',age:21},{name:'b',age:44},{name:'a',age:88}]
+
+// i want to find if 88 exist in the array or not
+// if it does just return the Object
+
+
+
+
+// map, filter, reduce and find
+
+
+    </script>
+</head>
+<body>
+    <h1>Hello</h1>
+</body>
+</html>
